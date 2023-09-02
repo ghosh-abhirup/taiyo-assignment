@@ -18,10 +18,17 @@ const EditContact = ({ open, closeFn, contact }: EditContactProps) => {
     closeFn();
   };
 
+  const handleClose = () => {
+    closeFn();
+    setFirstName(contact.data.firstName);
+    setLastName(contact.data.lastName);
+    setStatus(contact.data.status);
+  };
+
   return (
     <Dialog
       open={open}
-      onClose={closeFn}
+      onClose={handleClose}
       sx={{
         "& .MuiDialog-paper": {
           width: { xs: "90%", sm: "500px" },
