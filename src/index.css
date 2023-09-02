@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b263b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+    @apply p-10
+}
+
+.componentBar{
+    @apply text-white w-full sm:w-fit font-semibold bg-white/[0.02] rounded-lg py-4 px-6 cursor-pointer;
+}
+
+.componentBar:hover{
+    @apply transition bg-white/[0.05]
+}
+
+.contactBtn{
+    @apply bg-white rounded-lg py-4 px-6 text-lg text-[#1b263b] font-semibold
+}
+
+.glassMorphism{
+    width: 300px; /* Adjust the width as needed */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15); /* Background color with opacity */
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
 }
