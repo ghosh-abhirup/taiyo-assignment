@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import SideBar from "./SideBar";
 
 const Navbar = () => {
-  const [sideBarOpen, setSideBarOpen] = useState(true);
+  const [sideBarOpen, setSideBarOpen] = useState(false);
 
   const handleSidebar = () => {
     !sideBarOpen && setSideBarOpen(true);
