@@ -11,8 +11,8 @@ body{
     background-color: #1b263b;
 }
 
-.container{
-    @apply flex items-center justify-center py-14 px-4 w-full h-screen
+.containerDiv{
+    @apply flex items-center justify-center py-14 px-4 w-screen h-screen
 }
 
 .componentBar{
@@ -24,13 +24,38 @@ body{
 }
 
 .contactBtn{
-    @apply bg-white rounded-lg py-2 px-4 text-lg text-[#1b263b] font-semibold
+    @apply bg-white rounded-lg py-2 px-4 text-base sm:text-lg text-[#1b263b] font-semibold
 }
 
 .glassMorphism{
-    width: 300px; /* Adjust the width as needed */
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.15); /* Background color with opacity */
-  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    background: rgba( 255, 255, 255, 0 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 19px );
+-webkit-backdrop-filter: blur( 19px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.formElement{
+    @apply w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-4 mb-4
+}
+.labelPara{
+    @apply font-semibold text-sm sm:text-base text-white
+}
+.inpElement{
+    @apply w-full sm:flex-1 px-4 py-2 rounded-md outline-none text-sm sm:text-base font-medium
+}
+
+.contactBar{
+    @apply text-white w-full font-semibold bg-white/[0.02] rounded-lg py-4 px-6 cursor-pointer;
+}
+.contactBar:hover{
+    @apply transition bg-white/[0.05]
+}
+
+.contactBarIcon{
+    @apply text-sm sm:text-lg
+}
+
+.detailsPara{
+    @apply w-full sm:w-fit text-sm sm:text-base font-semibold text-white bg-white/[0.1] px-4 py-2 rounded-lg
 }
