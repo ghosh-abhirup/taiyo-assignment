@@ -27,13 +27,13 @@ const SideBar = ({ open, close }: SideBarProps) => {
           to="/contactApp"
           className="px-4 py-2 text-lg font-semibold leading-6 cursor-pointer mt-2  hover:bg-black/[0.05] transition "
         >
-          Contact App
+          Contact
         </Link>
         <Link
           to="/graphApp"
           className="px-4 py-2 text-lg font-semibold leading-6 cursor-pointer mt-2 hover:bg-black/[0.05] transition "
         >
-          Graph Visualisation App
+          Charts and Maps
         </Link>
       </Drawer>
     </>
